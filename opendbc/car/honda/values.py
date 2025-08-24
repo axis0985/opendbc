@@ -235,6 +235,14 @@ class CAR(Platforms):
     {Bus.pt: 'honda_civic_ex_2022_can_generated'},
     flags=HondaFlags.BOSCH_RADARLESS,
   )
+  HONDA_FIT_4G = HondaBoschPlatformConfig(
+    [
+      HondaCarDocs("Honda Fit e:Hev (Taiwan) 2022", "All"),
+    ],
+    CarSpecs(mass=2867 * CV.LB_TO_KG, wheelbase=2.7, steerRatio=13.0, centerToFrontRatio=0.41),
+    {Bus.pt: 'honda_civic_ex_2022_can_generated'},
+    flags=HondaFlags.BOSCH_RADARLESS,
+  )
   ACURA_RDX_3G = HondaBoschPlatformConfig(
     [HondaCarDocs("Acura RDX 2019-21", "All", min_steer_speed=3. * CV.MPH_TO_MS)],
     CarSpecs(mass=4068 * CV.LB_TO_KG, wheelbase=2.75, steerRatio=11.95, centerToFrontRatio=0.41, tireStiffnessFactor=0.677),  # as spec
@@ -288,13 +296,6 @@ class CAR(Platforms):
     CarSpecs(mass=2644 * CV.LB_TO_KG, wheelbase=2.53, steerRatio=13.06, centerToFrontRatio=0.39, tireStiffnessFactor=0.75),
     radar_dbc_dict('honda_fit_ex_2018_can_generated'),
     flags=HondaFlags.NIDEC_ALT_SCM_MESSAGES,
-  )
-  HONDA_FIT_4G = HondaBoschPlatformConfig(
-    [
-      HondaCarDocs("Honda Fit e:Hev (Taiwan) 2022-2025", "All"),
-    ],
-    {Bus.pt: 'honda_fit_ehev_2022_can_generated'},
-    flags=HondaFlags.BOSCH_RADARLESS | HondaFlags.ALLOW_MANUAL_TRANS
   )
   HONDA_FREED = HondaNidecPlatformConfig(
     [HondaCarDocs("Honda Freed 2020", min_steer_speed=12. * CV.MPH_TO_MS)],
