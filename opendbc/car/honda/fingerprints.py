@@ -496,29 +496,6 @@ FW_VERSIONS = {
       b'77959-T5R-A230\x00\x00',
     ],
   },
-  CAR.HONDA_FIT_4G: {
-    (Ecu.eps, 0x18da30f1, None): [
-      b'39990-TZA-E030\x00\x00', # Taiwan Fit:EHEV 2022~
-    ],
-    (Ecu.gateway, 0x18daeff1, None): [
-      b'38897-TZB-U010\x00\x00', # Taiwan Fit:EHEV 2022~
-    ],
-    (Ecu.fwdRadar, 0x18dab0f1, None): [
-      b'36161-TZK-P140\x00\x00', # Taiwan Fit:EHEV 2022~
-    ],
-    (Ecu.vsa, 0x18da28f1, None): [
-      b'57114-TZL-F010\x00\x00', # Taiwan Fit:EHEV 2022~
-    ],
-    (Ecu.srs, 0x18da53f1, None): [
-      b'77959-TZA-F210\x00\x00', # Taiwan Fit:EHEV 2022~
-    ],
-    # (Ecu.fwdCamera, 0x18dab5f1, None): [
-    #   b'36163-TZB-J020\x00\x00', # GR3 2020 Luxe
-    #   b'36163-TZB-J030\x00\x00', # GR3 2020 Luxe
-    #   b'36163-TZB-J420\x00\x00', # GR3 2023 RS
-    #   b'36163-TZB-J340\x00\x00', # GR6 2021 CROSSTAR
-    # ],
-  },
   CAR.HONDA_FREED: {
     (Ecu.gateway, 0x18daeff1, None): [
       b'38897-TDK-J010\x00\x00',
@@ -1064,5 +1041,28 @@ FW_VERSIONS = {
     (Ecu.transmission, 0x18da1ef1, None): [
       b'28101-63B-M420\x00\x00',
     ],
+  },
+  CAR.HONDA_FIT_4G: {
+    (Ecu.eps, 0x18da30f1, None): [
+      b'39990-TZA-E030\x00\x00', # Taiwan Fit:EHEV 2022~
+    ],
+    (Ecu.gateway, 0x18daeff1, None): [
+      b'38897-TZB-U010\x00\x00', # Taiwan Fit:EHEV 2022~
+    ],
+    (Ecu.fwdRadar, 0x18dab0f1, None): [
+      b'36161-TZK-P140\x00\x00', # Taiwan Fit:EHEV 2022~
+    ],
+    (Ecu.vsa, 0x18da28f1, None): [
+      b'57114-TZL-F010\x00\x00', # Taiwan Fit:EHEV 2022~
+    ],
+    (Ecu.srs, 0x18da53f1, None): [
+      b'77959-TZA-F210\x00\x00', # Taiwan Fit:EHEV 2022~
+    ],
+    # (Ecu.fwdCamera, 0x18dab5f1, None): [
+    #   b'36163-TZB-J020\x00\x00', # GR3 2020 Luxe
+    #   b'36163-TZB-J030\x00\x00', # GR3 2020 Luxe
+    #   b'36163-TZB-J420\x00\x00', # GR3 2023 RS
+    #   b'36163-TZB-J340\x00\x00', # GR6 2021 CROSSTAR
+    # ],
   },
 }
