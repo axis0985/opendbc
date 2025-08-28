@@ -239,9 +239,9 @@ class CAR(Platforms):
   )
   HONDA_FIT_4G = HondaBoschPlatformConfig(
     [
-      HondaCarDocs("Honda Fit (Taiwan) 2022", "All"),
+      HondaCarDocs("Honda Fit (Taiwan Only) 2022", "All"),
     ],
-    CarSpecs(mass=2867 * CV.LB_TO_KG, wheelbase=2.7, steerRatio=13.0, centerToFrontRatio=0.41),
+    CarSpecs(mass=2867 * CV.LB_TO_KG, wheelbase=2.53, steerRatio=15.0, centerToFrontRatio=0.41),
     {Bus.pt: 'honda_civic_ex_2022_can_generated'},
     flags=HondaFlags.BOSCH_RADARLESS,
   )
