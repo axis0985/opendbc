@@ -242,7 +242,7 @@ class CAR(Platforms):
       HondaCarDocs("Honda Fit (Taiwan Only) 2022", "All"),
     ],
     CarSpecs(mass=2867 * CV.LB_TO_KG, wheelbase=2.53, steerRatio=15.0, centerToFrontRatio=0.41),
-    {Bus.pt: 'honda_civic_ex_2022_can_generated'},
+    {Bus.pt: 'honda_bosch_radarless_generated'},
     flags=HondaFlags.BOSCH_RADARLESS,
   )
   ACURA_RDX_3G = HondaBoschPlatformConfig(
